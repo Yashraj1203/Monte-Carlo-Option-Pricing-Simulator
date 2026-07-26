@@ -36,20 +36,15 @@ Where:
 
 ### Black-Scholes Formula
 European Call:
-$$
-C = S_0 N(d_1) - K e^{-rt} N(d_2)
-$$
+$$ C = S_0 N(d_1) - K e^{-rt} N(d_2) $$
+
 European Put:
-$$
-P = K e^{-rt} N(-d_2) - S_0 N(-d_1)
-$$
-Where:
-$$
-d_1 = \frac{\ln(S_0/K) + (r + 0.5\sigma^2)t}{\sigma\sqrt{t}}
-$$
-$$
-d_2 = d_1 - \sigma\sqrt{t}
-$$
+$$ P = K e^{-rt} N(-d_2) - S_0 N(-d_1) $$
+
+Where: $$ d_1 = \frac{\ln(S_0/K) + (r + 0.5\sigma^2)t}{\sigma\sqrt{t}} $$
+
+$$ d_2 = d_1 - \sigma\sqrt{t} $$
+
 - $N(\cdot)$: Cumulative distribution function of the standard normal distribution
 - $K$: Strike price
 - $t$: Time to maturity
