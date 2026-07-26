@@ -24,7 +24,10 @@ This project is a professional simulator for pricing European Call and Put optio
 
 ### Geometric Brownian Motion (GBM)
 Stock price evolution:
-$$ S_t = S_0 \exp\left((r - 0.5\sigma^2)t + \sigma W_t\right) $$
+
+$$ 
+S_t = S_0 \exp\left((r - 0.5\sigma^2)t + \sigma W_t\right)
+$$
 
 Where:
 - $S_t$: Stock price at time $t$
@@ -34,13 +37,27 @@ Where:
 - $W_t$: Wiener process (Brownian motion)
 
 ### Black-Scholes Formula
-European Call:  $$ C = S_0 N(d_1) - K e^{-rt} N(d_2) $$
+European Call:  
 
-European Put:  $$ P = K e^{-rt} N(-d_2) - S_0 N(-d_1) $$
+$$
+C = S_0 N(d_1) - K e^{-rt} N(d_2)
+$$
+
+European Put: 
+
+$$
+P = K e^{-rt} N(-d_2) - S_0 N(-d_1)
+$$
 
 Where:
-$$ d_1 = \frac{\ln(S_0/K) + (r + 0.5\sigma^2)t}{\sigma\sqrt{t}}$$
-$$ d_2 = d_1 - \sigma\sqrt{t} $$
+
+$$
+d_1 = \frac{\ln(S_0/K) + (r + 0.5\sigma^2)t}{\sigma\sqrt{t}}
+$$
+
+$$
+d_2 = d_1 - \sigma\sqrt{t}
+$$
 
 - $N(\cdot)$: Cumulative distribution function of the standard normal distribution
 - $K$: Strike price
