@@ -25,6 +25,7 @@ This project is a professional simulator for pricing European Call and Put optio
 ### Geometric Brownian Motion (GBM)
 Stock price evolution:
 $$ S_t = S_0 \exp\left((r - 0.5\sigma^2)t + \sigma W_t\right) $$
+
 Where:
 - $S_t$: Stock price at time $t$
 - $S_0$: Initial stock price
